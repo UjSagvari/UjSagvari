@@ -1,0 +1,12 @@
+<header class="newspaper-header" style="border-bottom: 1px solid #ebebeb;">
+  <h1 class="post-title p-name" itemprop="name headline">{{ heading | default: page.title | escape }}</h1>
+
+  {%- if page.tags.size > 0 -%}
+  <div class="post-tags">
+    {%- for tag in page.tags -%}
+    <a class="post-tag" href="{{ '/tags.html ' | relative_url }}#{{tag}}">#{{tag}}</a>
+    {%- endfor -%}
+  </div>
+  {%- endif -%}
+
+</header>

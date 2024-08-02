@@ -1,0 +1,83 @@
+---
+layout: about
+title: Rólunk
+---
+<style>
+    .personcard {
+        display: block;
+        height: auto;
+        overflow: auto;
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        position: relative;
+    }
+    .personcard img {
+        padding: 1%;
+        display: inline;
+        float: left;
+        border-radius: 50%;
+        width: 30%;
+    }
+    .personcard-info {
+        position: absolute;
+        top: 50%;
+        left: 33%;
+        transform: translate(0%, -50%);
+
+        display: block;
+        padding: 0;
+        width: 58%;
+        
+        font-size: larger;
+    }
+    .personcard-info p {
+        font-style: oblique;
+    }
+    @media screen and (max-width: 415px) {
+        .personcard {
+            position: static;
+        }
+        .personcard img {
+            margin-top: 5%;
+            padding: 1%;
+            display: inline;
+            float: none;
+            border-radius: 50%;
+            width: 80%;
+            position: relative;
+            top: 50%;
+        }
+        .personcard-info {
+            transform: none;
+            position: static;
+            float: none;
+            margin: auto;
+            margin-top: 4%;
+            font-size: larger;
+            text-align: center;
+        }
+    }
+</style>
+
+<h2 id="Rólunk">Rólunk</h2>
+
+<p>
+:newspaper:&nbsp; A Ságvári diákjai által működtetett újság és honlap &nbsp;:newspaper:
+</p>
+
+
+<h2 id="Szerkesztőség">Szerkesztőség</h2>
+{% for ember in site.data.szerkesztok %}
+    <h3 id="{{ember.nev}}">{{ ember.nev }}</h3>
+
+    <div class="personcard">
+        {% if ember.kep %}
+            <img src="/assets/szerkesztok/{{ ember.kep }}" alt="szerkesző képe">
+        {% else %}
+            <img src="/assets/szerkesztok/default.jpg" alt="szerkesző képe">
+        {% endif %}
+        <div class="personcard-info">
+            <p>{{ ember.beosztas }}</p>
+        </div>
+    </div>
+{% endfor %}

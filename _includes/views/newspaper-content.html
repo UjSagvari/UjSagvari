@@ -1,0 +1,95 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StPageFlip Example</title>
+  <link rel="stylesheet" href="/assets/node_modules/page-flip/src/Style/stPageFlip.css">
+  <style>
+      html {
+        overflow-y: scroll;
+      }
+      #flipbook {
+        position: relative;
+        margin: auto;
+        background-color: hsl(35, 55, 98);
+      }
+      .page {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: hsl(35, 55, 98);
+        overflow: hidden;
+        background-size: contain;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+      }
+      .page.--right .page-content::after {
+        content: '';
+        top:0; left:0; right:0; bottom:0;
+        position: absolute;
+        box-shadow: inset 7px 0 30px -7px rgba(0, 0, 0, 0.4);
+      }
+      .page.--left .page-content::after {
+        content: '';
+        top:0; left:0; right:0; bottom:0;
+        position: absolute;
+        box-shadow: inset -7px 0 30px -7px rgba(0, 0, 0, 0.4);
+      }
+      .page-content {
+        padding: 0;
+      }
+      .page-content img {
+        width: 100%;
+      }
+      .wrapper {
+        max-width: 1400px; 
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .container {
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+  </style>
+</head>
+
+<div class="container">
+    <div id="flipbook">
+
+      {% for i in (1..page.oldalszam) %}
+        <div class="page">
+          <div class="page-content">
+              <img src="/assets/newspaper_pages/{{page.kiadas}}_pages/{{i}}.png" alt="lap">
+          </div>
+        </div>
+      
+      {% endfor %}
+        
+    </div>
+</div>
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <div class="post-content e-content" itemprop="articleBody">
+
+    {{ content }}
+
+  </div>
+
+</article>
+
+
+<script src="/assets/node_modules/page-flip/dist/js/page-flip.browser.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const pageFlip = new St.PageFlip(document.getElementById('flipbook'), {
+            width: 400,
+            height: 565,
+            size: "stretch",
+            minWidth: 315,
+            maxWidth: 750,
+            maxShadowOpacity: 0.5,
+            showCover: true,
+            mobileScrollSupport: false,
+        });
+
+        pageFlip.loadFromHTML(document.querySelectorAll('.page'));
+    });
+</script>
