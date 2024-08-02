@@ -1,0 +1,3 @@
+Hello!! Látom szeretnél feltölteni egy újabb példányt.
+Az elnevezési formula a következő
+[kiadás_éve_19-től]e[kiadás_száma_az_évben]sz_pages
