@@ -3,7 +3,6 @@ layout: post
 title: A spenótos csirke legendája
 author: Mójzes Máté
 excerpt_image: https://streetkitchen.hu/wp-content/uploads/2017/05/IMG_2381.jpg
-top: 1
 tags: [gasztró]
 categories: Földobott-kő
 ---
