@@ -40,7 +40,7 @@ author: Öövel Arho
 #   "Copyright (c) 2017-{currentYear} <a href="https://example.com">{author}</a>"
 #   "Copyright © 2017-2021 Foobar"
 #
-copyright: "Újságvári (cleft) 2023-{currentYear} {author}"
+copyright: "Újságvári (cleft) Anno 1992-2025 {author}"
 
 description: >- # this means to ignore newlines until "baseurl:"
   A Ságvári diákjai által működtetett újság és honlap
