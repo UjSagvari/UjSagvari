@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Újságvári
+title: Újságvári honlap
 subtitle: Ságvárisoktól Ságvárisoknak
 author: Öövel Arho
 categories: meta
 banner:
-  video: https://www.youtube.com/watch?v=4bpt61svuXo
+  video: /assets/videos/sagvarizmus720p.mp4
   loop: true
   volume: 0.8
   start_at: 8.5
