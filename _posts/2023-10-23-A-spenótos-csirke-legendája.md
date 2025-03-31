@@ -10,7 +10,7 @@ categories: Földobott-kő
 ![Spenótos csirke kép](https://streetkitchen.hu/wp-content/uploads/2017/05/IMG_2381.jpg)
 
 A nyári szünet érdekes, mennyire lusta lehet az ember, mennyire homályba vesznek a napjai. Ez a nap is júliusban történhetett.
-# A reggeli rítus
+## A reggeli rítus
 
 Felkeltem, nem nyomtam ki az ébresztőt, hiszen tudtam, hogy ha továbbalszom még fáradtabb lehetek. Kinyújtóztam, ásítottam egyet, korgott egyet a gyomrom, evvel jelezte szándékat az agyamnak. Elég durván tette ezt, mert akkor már vagy háromnegyed napja nem ehettem. 
 
