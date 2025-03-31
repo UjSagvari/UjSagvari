@@ -8,7 +8,7 @@ banner:
   video: /assets/videos/sagvarizmus720p.mp4
   loop: true
   volume: 0.8
-  start_at: 8.5
+  start_at: 0
   image: /assets/images/banners/image_darkened.jpg
   opacity: 0.618
   background: "#000"
