@@ -4,7 +4,7 @@ title: Hófehérke és a modern feminizmus
 author: Péter-Szabó Anna
 excerpt_image: https://imgs.classicfm.com/images/246204?width=1200&crop=16_9&signature=fDLBLBD4U87REDAFvmhm_uTZDLk=
 top: 1
-tags: [társadalom]
+tags: [társadalom, film]
 categories: Földobott-kő
 ---
 
