@@ -20,3 +20,4 @@ tags: meta sagvarizmus
 top: 1
 sidebar: []
 ---
+Hivatalosan megnyílik az Újságvári honlapja, amelyen elérhetők lesznek múlt és jövő kiadásai!
